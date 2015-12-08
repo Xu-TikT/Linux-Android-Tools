@@ -1,0 +1,3 @@
+需要创建一个sublime_imfix.c文件，由于之后需要使用GTK将文件编译成.so文件，但是电脑上没有GTK，所以不进行设置了，直接使用Atom了。
+不过在此留下解决方案的链接：
+http://blog.chinaunix.net/uid-24948299-id-2538505.html
