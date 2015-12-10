@@ -10,5 +10,6 @@ export PATH=$PATH:$IDEA_HOME/bin   (如果有多个路径使用冒号分隔)
 source /etc/profile
 
 完成之后，点击快捷方式即可启动idea
+当遇到找不到JetbrainsCrack.jar的提示时，将idea.vmoptions和idea64.vmoptions中的jar路径改为绝对路径
 
 
