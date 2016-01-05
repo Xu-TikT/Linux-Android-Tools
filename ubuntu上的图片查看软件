@@ -1,0 +1,12 @@
+由于浏览他人电脑上的图片不会显示缩略图，所以需要ubuntu上的图片查看软件
+目前用的是Gwenview
+使用命令：sudo apt-get install gwenview
+其他的还有：
+Eye of GNOME:
+sudo apt-get install eog
+
+gThumb:
+sudo apt-get install gthumb
+
+
+
