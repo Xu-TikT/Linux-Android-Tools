@@ -1,0 +1,11 @@
+android 支付宝跳网页
+需要在清单文件中加入如下代码：
+<!-- alipay sdk begin 在支付宝jar中，不可改动 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+<!-- alipay sdk end -->
