@@ -1,0 +1,18 @@
+#在android上混淆与JS交互的方法
+e.g 
+-keepattributes *JavascriptInterface*
+-keepattributes *Annotation*
+-keepclassmembers class com.**.**Activity$**[activity中的类名]{
+   public *;
+}
+
+类中的方法也需要加上：@JavascriptInterface
+e.g
+public class onLogin{
+
+    @JavascriptInterface
+    public void onLogin(String id) {
+    //TODO your code
+	
+    }
+}
