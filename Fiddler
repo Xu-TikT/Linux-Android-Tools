@@ -1,0 +1,3 @@
+在Linux上安装Fiddler需要安装Mono运行环境：
+sudo apte-get install mono-complete
+然后下载Fiddler For Linux
