@@ -1,0 +1,10 @@
+http://www.jianshu.com/p/6f5f818afe4b?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
+#git忽略插件
+	.gitignore
+#android-butterknife-zelezny，快速初始化findViewById和onClick
+#使用的是加强版的插件，即同意文件夹下的jar
+#通过Install plugin from disk安装，并在build.gradle中添加依赖，目前使用7.0
+	compile 'com.jakewharton:butterknife:7.0.0'
+#Gsonformat，可根据json数据快速生成java实体类
+
+#Android Postfix Completion，快速添加Toast
