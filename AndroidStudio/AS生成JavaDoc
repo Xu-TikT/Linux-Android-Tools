@@ -1,0 +1,4 @@
+在Tools菜单下点击javaDoc，由于使用uft-8编码，生成的文件会出现中文乱码，解决方法：
+在Other command line arguments:中添加 -encoding utf-8 -charset utf-8
+
+
