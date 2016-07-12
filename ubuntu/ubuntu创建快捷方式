@@ -1,0 +1,8 @@
+#以AndroidStudio为例
+[Desktop Entry]
+Name=Studio
+comment=android studio
+Exec=/home/tikt/soft/android-studio/bin/studio.sh
+Icon=/home/tikt/soft/android-studio/bin/studio.png
+Terminal=false
+Type=Application

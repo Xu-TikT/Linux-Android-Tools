@@ -1,0 +1,20 @@
+ScroolView中嵌套RecyclerView,屏蔽RecyclerView的滑动
+1.重写RecyclerView的onMeasure方法(这个和重写Listview一样):
+	@Override
+	public void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+
+		//
+		int expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2,
+				MeasureSpec.AT_MOST);
+		super.onMeasure(widthMeasureSpec, expandSpec);
+	}
+2.屏蔽LinearLayoutManager中的滑动:
+	linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false) {
+			@Override
+			public boolean canScrollVertically() {
+//				return super.canScrollVertically();
+				return false;
+			}
+		};
+
+这样即可以屏蔽滑动,又不会像网上的方法导致滑动失去惯性不流畅的问题

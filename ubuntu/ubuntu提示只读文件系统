@@ -1,0 +1,13 @@
+ubuntu提示只读文件系统
+发生该错误的时候正在更新Android SDK,浏览器的几个网页报js脚本错误,整个系统界面卡了几分钟,之后AS就提示无法保存之类的错误,也无法手动在home文件夹下新建任何东西.
+查看/etc/fstab文件时发现
+UUID=xxxx  /  ext4  errors=remount-ro  0  1
+这个说明ubuntu文件系统成了只读文件系统。
+解决办法：
+(网上:)
+sudo fsck  /dev/sdxy       #sdxy为系统dev/sdxy is your ubuntu root partition 或者为出现问题的分区。
+一路yes fix之后，重启电脑，至此ubuntu工作正常！
+(尝试:)
+输入:sudo fsck /
+因为我只有这个根目录,之后选择yes,再重启电脑,系统提示硬盘错误,选择自动修复又可重新进入系统,问题修复.
+这个问题可能是网页导致系统卡住之后,导致硬盘出现了问题.
