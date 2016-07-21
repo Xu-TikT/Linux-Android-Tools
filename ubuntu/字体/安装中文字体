@@ -1,0 +1,9 @@
+在/usr/share/fonts/下新建文件夹 如：winFonts目录，把如msyh.ttf拷贝过来
+然后，改变权限：
+sudo chmod 644 /usr/share/fonts/winFonts/msyh.ttf 
+开始安装：
+sudo mkfontscale （创建雅黑字体的fonts.scale文件，它用来控制字体旋转缩放）
+sudo mkfontdir （创建雅黑字体的fonts.dir文件，它用来控制字体粗斜体产生）
+sudo fc-cache -fv （建立字体缓存信息，也就是让系统认识认识雅黑）
+
+
