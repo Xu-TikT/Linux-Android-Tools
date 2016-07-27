@@ -1,0 +1,5 @@
+当本地和远程都建立了仓库
+需要先本地添加remote:
+git remote add <remote-name> <remote-url>
+再配置上游分支：
+git push --set-upstream <remote-name> master
